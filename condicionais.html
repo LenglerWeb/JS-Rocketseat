@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Curso de Javascript - Rocketseat</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function retornaSexo(sexo){
+			// M, F
+			// Masculino, Feminino
+
+			if(sexo === 'M'){
+				return 'Masculino'
+			} else if (sexo === 'F'){
+				return 'Feminino'
+			} else {
+				return 'Outro'
+			}
+
+		}
+
+		console.log('> Function com if / else:')
+		var resultado = retornaSexo('M')
+		var resultado2 = retornaSexo('F')
+		var resultado3 = retornaSexo('Outro')
+		console.log(resultado)
+		console.log(resultado2)
+		console.log(resultado3)
+
+
+		function retornaSexo2(sexo){
+			switch(sexo){
+				case 'M':
+				return 'Masculino'
+
+				case 'F':
+				return 'Feminino'
+
+				default:
+				return 'Outro'
+			}
+		}
+
+		console.log('> Function com switch:')
+		var resultado = retornaSexo('M')
+		var resultado2 = retornaSexo('F')
+		var resultado3 = retornaSexo('Outro')
+		console.log(resultado)
+		console.log(resultado2)
+		console.log(resultado3)
+
+
+
+	</script>
+</body>
+</html>
