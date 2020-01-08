@@ -8,8 +8,59 @@
 	<h1>Exercícios: Módulo 01</h1>
 	<h2>1º exercício</h2>
 	<h3>Crie uma função que dado o objeto a seguir:</h3>
+	<h3>var endereco = {  rua: "Rua dos pinheiros",  numero: 1293,  bairro: "Centro",  cidade: "São Paulo",  uf: "SP"};</h3>
+	<h3>Retorne o seguinte conteúdo:</h3>
+	<h3>O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" comnº 1293.</h3>
+<h1><br></h1>
+	<h2>2º exercício</h2>
+	<h3>Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:</h3>
+	<h3>function pares(x, y) {  // código aqui}pares(32, 321);</h3>
+<h1><br></h1>
+	<h2>3º exercício</h2>
+	<h3>Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"e retorna um booleano true/false caso exista ou não.</h3>
+	<h3>function temHabilidade(skills) {  // código aqui}var skills = ["Javascript", "ReactJS", "React Native"];temHabilidade(skills); // true ou false</h3>
+	<h3>Dica: para verificar se um vetor contém um valor, utilize o método indexOf.</h3>
+<h1><br></h1>
+	<h2>4º exercício</h2>
+	<h3>Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:</h3>
+	<h3>function experiencia(anos) {  // código aqui}var anosEstudo = 7;experiencia(anosEstudo);// De 0-1 ano: Iniciante// De 1-3 anos: Intermediário// De 3-6 anos: Avançado// De 7 acima: Jedi Master</h3>
+<h1><br></h1>
+	<h2>5º exercício</h2>
+	<h3>Dado o seguinte vetor de objetos:</h3>
+	<h3>var usuarios = [  {    nome: "Diego",    habilidades: ["Javascript", "ReactJS", "Redux"]  },  {    nome: "Gabriel",    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]  }];</h3>
+	<h3>Escreva uma função que produza o seguinte resultado:</h3>
+	<h3>O Diego possui as habilidades: Javascript, ReactJS, ReduxO Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir</h3>
+	<h3>Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um arraycom um separador utilize o join.</h3>
+
 	<script type="text/javascript">
-		
+console.log('> 1º exercício:')
+		var endereco = {
+			rua: 'Av. Wenceslau Escobar',
+			numero: 1086,
+			bairro: 'Cristal',
+			cidade: 'Porto Alegre',
+			uf: 'RS'
+		}
+
+		console.log('O usuário mora em '+endereco.cidade+' / '+endereco.uf+', no bairro '+endereco.bairro+' na '+endereco.rua+', no múmero '+endereco.numero+'.')
+
+console.log('> 2º exercício:')
+		function pares(x, y){
+			var todosPares
+			for (var i=x; i<=y; i += 2){
+				todosPares = i
+			} 
+			return todosPares
+		}
+		var ate = pares(1, 10)
+		console.log(ate)
+
+console.log('> 3º exercício:')
+console.log('> 4º exercício:')
+console.log('> 5º exercício:')
+
+
+
 	</script>
 </body>
 </html>
